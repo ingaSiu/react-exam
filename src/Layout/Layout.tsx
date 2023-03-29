@@ -1,3 +1,4 @@
+import Menu from '../components/Menu';
 import { ReactNode } from 'react';
 
 type MainLayoutProps = {
@@ -7,6 +8,7 @@ type MainLayoutProps = {
 const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <>
+      <Menu></Menu>
       <div>{children}</div>
     </>
   );
