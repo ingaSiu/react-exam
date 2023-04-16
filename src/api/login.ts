@@ -2,7 +2,7 @@ import { BASE_URL } from './baseApi';
 import { User } from '../types/user';
 import httpClient from './httpClient';
 
-export const login = ({ email, password }: User): Promise<any> => {
+export const login = ({ email, password }: User): Promise<User> => {
   return httpClient
     .post(`${BASE_URL}auth/login`, { email, password })
     .then((response) => {
